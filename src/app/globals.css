@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	line-height: 1.5;
+	font-weight: 400;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Inter', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings: 'slnt' 0;
+}
+
+@layer base {
+	body {
+		@apply bg-zinc-950 text-neutral-200;
+	}
+}
+
+
+.toggle-button{
+	display: none !important;
+}
+
+.primary-navbar{
+	display: flex !important;
+	justify-content: center !important;
+	flex-wrap: wrap !important;
+	row-gap: 18px !important;
+}
+
+@media screen and (max-width: 768px) {
+	.toggle-button{
+		display: block !important;
+	}
+
+	.primary-navbar{
+		display: none !important;
+	}
+}
